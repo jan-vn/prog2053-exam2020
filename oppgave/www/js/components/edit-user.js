@@ -11,25 +11,21 @@ class EditUser extends LitElement {
     return html`
     <form onsubmit:"javascript: return false;" id="user" method="POST">
     <div>
-      <label for="firstName">First Name</label>
-      <input id="firstName" name="firstName" type="text" value="${this.user.firstName}" required>
+      <input id="firstName" name="firstName" type="text" placeholder="First Name" value="${this.user.firstName}" required>
     </div>
     <div>
-      <label for="lastName">Last Name</label>
-      <input id="lastName" name="lastName" type="text" value="${this.user.lastName}" required>
+      <input id="lastName" name="lastName" type="text" placeholder="Last Name" value="${this.user.lastName}" required>
     </div>
     <div>
-      <label for="email">E-mail</label>
-      <input id="uname" name="uname" type="text" value="${this.user.uname}" required>
+      <input id="uname" name="uname" type="text" placeholder="E-mail" value="${this.user.uname}" required>
     </div>
     <div>
-      <label for="oldPwd">Old Password</label>
-      <input id="oldPwd" name="oldPwd" type="password" required>
+      <input id="oldPwd" name="oldPwd" type="password" placeholder="Old password" required>
     </div>
     <div>
-      <label for="newPwd">New Password</label>
-      <input id="newPwd" name="newPwd" type="password" required>
+      <input id="newPwd" name="newPwd" type="password" placeholder="New password" required>
     </div>
+    <br>
      <input type="submit" @click=${this.updateUser} id="submit" name="editUser" value="Submit"></input>
     </form>
   `;
