@@ -1,4 +1,4 @@
-# Student ID:
+# Student ID/Candidate Number:
 10126
 
 # PROG2053 eksamen v2020
