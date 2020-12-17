@@ -24,11 +24,11 @@ class EditUser extends LitElement {
     </div>
     <div>
       <label for="oldPwd">Old Password</label>
-      <input id="oldPwd" name="oldPwd" type="password" value="Old Password" required>
+      <input id="oldPwd" name="oldPwd" type="password" required>
     </div>
     <div>
       <label for="newPwd">New Password</label>
-      <input id="newPwd" name="newPwd" type="password" value="New Password" required>
+      <input id="newPwd" name="newPwd" type="password" required>
     </div>
      <input type="submit" @click=${this.updateUser} id="submit" name="editUser" value="Submit"></input>
     </form>
